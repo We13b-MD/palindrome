@@ -21,8 +21,8 @@ jobs:
 
       - name: Install dependencies and ESLint
         run: |
-          npm install
+          npm install jest
           npm install eslint 
       - name: Run Jest tests and linting
         run: |
-          npm run lint && jest
+          npm run lint && npm test
