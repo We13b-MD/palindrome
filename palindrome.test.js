@@ -1,4 +1,5 @@
 const { palindromeChecker } = require('./palindrome')
+const {jest,test,describe} = require('jest')
 const { JSDOM } = require('jsdom')
 const { document, window } = new JSDOM('<!DOCTYPE html>').window
 global.document = document
