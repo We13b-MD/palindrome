@@ -1,7 +1,7 @@
 const { palindromeChecker } = require('./palindrome')
-
 const { JSDOM } = require('jsdom')
 const { document, window } = new JSDOM('<!DOCTYPE html>').window
+
 global.document = document
 global.window = window
 global.alert = jest.fn() // Mock window.alert
