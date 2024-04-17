@@ -23,6 +23,7 @@ jobs:
         run: |
           npm install jest
           npm install eslint 
+          npm i eslint-plugin-jest  
       - name: Run Jest tests and linting
         run: |
           npm run lint && npm test
